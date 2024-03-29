@@ -14,30 +14,30 @@
 <body>
     <header class="container-fluid px-0">
         <div class="row bg-body-tertiary text-center px-0 m-0 align-items-center" style="--bs-bg-opacity: .8;">
-            <div class="col-4">
+            <div class="col-md-5 d-none d-md-block">
                 <a href="index.html" class="navbar-brand text-dark" id="logo">Bravuro</a>
             </div>
-            <div class="col-4">
+            <div class="col-md-2">
                 <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid" width="170"></a>
             </div>
-            <div class="col-4">
-                <nav class="navbar navbar-expand-xl text-center">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="col-12 col-md-5">
+                <nav class="navbar navbar-expand-lg text-center">
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end px-5" id="navbarTogglerDemo03">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="index.html">Početna</a>
+                            <a class="nav-link link-body-emphasis" aria-current="page" href="index.html">Početna</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active link-body-emphasis link-offset-2 link-underline-opacity-75 link-underline-opacity-75-hover" aria-current="page" href="kontakt.html">Kontakt</a>
+                            <a class="nav-link active link-body-emphasis" href="kontakt.html">Kontakt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#">Galerija</a>
+                            <a class="nav-link link-body-emphasis" href="#">Istorijat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#">Autor</a>
+                            <a class="nav-link link-body-emphasis" href="autor.html">Autor</a>
                         </li>
                         </ul>
                     </div>
@@ -45,18 +45,63 @@
             </div>
         </div>
 
-    </header> 
+    </header>
+    <hr class="border border-dark border-3 opacity-75 w-100 my-0"> 
 
     <footer>
-        <div class="row m-0">
-            <div class="col-4 py-5">
-                <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid rounded-circle bg-body-tertiary" style="--bs-bg-opacity: .8;" width="170"></a>
-            </div>
-            <div class="col-4">
-                <p class="text-center text-light">&copy;Berbernica Bravuro 2024. All rights reserved.</p>
-            </div>
-            <div class="col-4">
-
+        <div class="container text-center">
+            <div class="row m-0 d-flex align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-4 py-5 d-none d-md-block">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid rounded-circle bg-body-tertiary" style="--bs-bg-opacity: .8;" width="200"></a>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="row-2 py-3 d-flex flex-xl-row flex-column align-items-center">
+                        <div class="container-fluid py-2">
+                            <a href="#" class="btn btn-outline-light border border-dark rounded-10 justify-content-center fs-5">Kontakt</a>
+                        </div>
+                        <div class="container-fluid py-2">
+                            <a href="#" class="btn btn-outline-light border-dark rounded-10 fs-5">Lokacija</a>
+                        </div>
+                        <div class="container-fluid py-2">
+                            <a href="https://www.poverenik.rs/sr-yu/politika-privatnosti.html" class="btn btn-outline-light border border-dark rounded-10 fs-5">Prava</a>
+                        </div>
+                    </div>
+                    <div class="row fs-3 py-2">
+                        <div class="col-2">
+                            <a href="https://www.instagram.com/" class="text-light"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://www.youtube.com/" class="text-light"><i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://twitter.com/?lang=en" class="text-light"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="text-light"><i class="fa-solid fa-rss"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#" class="text-light"><i class="fa-solid fa-sitemap"></i></a>
+                        </div>
+                        <div class="col-2">
+                            <a href="mailto:vukasin.radovanovic.67.23@ict.edu.rs" class="text-light"><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="text-center text-light">&copy;Berbernica Bravuro 2024. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-4 text-light text-center">
+                    <div class="row-12 row-lg-4 py-2">
+                        <p>Radno vreme: &nbsp;8h - 16h</p>
+                    </div>
+                    <div class="row-12 row-lg-4 py-2">
+                        <p>Adresa: Kralja Petra 11, Beograd</p>
+                    </div>
+                    <div class="row-12 row-lg-4 py-2">
+                        <p>Telefon: +381 64 1234567</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

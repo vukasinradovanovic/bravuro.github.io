@@ -15,12 +15,14 @@ header{
         li{
             a{
                 @include m{
-                    font-size:19px;
+                    font-size:17px;
                 }
                 @include l{
-                    font-size: 25px;
+                    font-size: 22px;
                 }
-                font-family: "Glass Antiqua", cursive;
+                font-family: "Tenor Sans", sans-serif;
+                font-weight: 400;
+                font-style: normal;
             }
         }
     }
@@ -37,35 +39,39 @@ header{
 }
 
 #gText{
-    font-family: "Glass Antiqua", cursive;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding-bottom: 50px;
     @include xs{
-        font-size: 27px;
+        font-size: 24px;
     }
     @include s{
-        font-size: 35px;
+        font-size: 32px;
     }
     @include m{
-        font-size: 43px;
+        font-size: 39px;
     }
     @include l{
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
 #rezime{
-    font-family: "Glass Antiqua", cursive;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding-bottom: 50px;
     @include xs{
-        font-size: 19px;
+        font-size: 17px;
     }
     @include s{
-        font-size: 25px;
+        font-size: 20px;
     }
     @include m{
-        font-size: 28px;
+        font-size: 24px;
     }
     @include l{
-        font-size: 32px;
+        font-size: 27px;
     }
 }
