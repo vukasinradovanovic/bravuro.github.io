@@ -1,0 +1,24 @@
+main{
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+table{
+    tr{
+        td{
+            @include xs{
+                font-size: 10px;
+            }
+            @include s{
+                font-size: 15px;
+            }
+            @include m{
+                font-size: 17px;
+            }
+            @include l{
+                font-size: 20px;
+            }
+        }
+    }
+}

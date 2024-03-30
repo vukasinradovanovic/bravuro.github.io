@@ -5,7 +5,7 @@ header{
     background-attachment: fixed;
 }
 
-#logo, #header_btn {
+#logo {
     font-family: "Glass Antiqua", cursive;
     font-size: 60px;
 }
@@ -74,4 +74,9 @@ header{
     @include l{
         font-size: 27px;
     }
+}
+#header_btn{
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
