@@ -2,6 +2,10 @@ main{
     font-family: "Tenor Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-blend-mode: color-burn;
 }
 
 table{
@@ -25,4 +29,16 @@ table{
 
 .card-body>h3{
     font-size: 20px;
+}
+
+#tIstorijat{
+    @include xs{
+        font-size: 15px;
+    }
+    @include m{
+        font-size: 14px;
+    }
+    @include l{
+        font-size: 19px;
+    }
 }

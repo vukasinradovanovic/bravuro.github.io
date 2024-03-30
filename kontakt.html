@@ -35,7 +35,7 @@
                             <a class="nav-link active link-body-emphasis" href="kontakt.html">Kontakt</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link link-body-emphasis" href="#">Istorijat</a>
+                            <a class="nav-link link-body-emphasis" href="istorijat.html">Istorijat</a>
                         </li>
                         <li class="nav-item p-2">
                             <a class="nav-link link-body-emphasis" href="autor.html">Autor</a>
@@ -49,56 +49,66 @@
     </header>
     <hr class="border border-dark border-3 opacity-75 w-100 my-0"> 
 
-    <main class="container-fluid bg-body-tertiary p-0 my-5">
-        <div class="container container-xl-fluid">
-            <div class="container">
-                <h2 class="text-center text-dark text-uppercase p-2">Zakažite termin</h2>
-            </div>
-            <hr class="border border-dark border-3 opacity-75 w-100 my-0">
-            <div class="container bg-dark p-3 rounded-bottom">
-                <form>
-                    <div class="row mb-3">
-                      <div class="col my-2">
-                        <div class="form-floating">
-                          <input type="text" class="form-control form-control-dark bg-body-tertiary" id="ime" placeholder="Ime" required>
-                          <label for="ime">Ime</label>
-                          <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+    <main class="container-fluid bg-body-tertiary p-0">
+        <div class="row w-100 p-3 p-5">
+            <div class="col-12 col-lg-6">
+                <div class="container-fluid">
+                    <h2 class="text-center text-dark text-uppercase p-2">Zakažite termin</h2>
+                </div>
+                <hr class="border border-dark border-3 opacity-75 w-100 my-0">
+                <div class="container-fluid bg-dark p-3 rounded-bottom">
+                    <form>
+                        <div class="row mb-3">
+                          <div class="col my-2">
+                            <div class="form-floating">
+                              <input type="text" class="form-control form-control-dark bg-body-tertiary" id="ime" placeholder="Ime" required>
+                              <label for="ime">Ime</label>
+                              <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                            </div>
+                          </div>
+                          <div class="col my-2">
+                            <div class="form-floating">
+                              <input type="text" class="form-control form-control-dark bg-body-tertiary" id="prezime" placeholder="Prezime" required>
+                              <label for="prezime">Prezime</label>
+                              <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col my-2">
-                        <div class="form-floating">
-                          <input type="text" class="form-control form-control-dark bg-body-tertiary" id="prezime" placeholder="Prezime" required>
-                          <label for="prezime">Prezime</label>
-                          <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                        <div class="row mb-3">
+                          <div class="col my-2">
+                            <div class="form-floating">
+                              <input type="email" class="form-control form-control-dark bg-body-tertiary" id="email" placeholder="Email" required>
+                              <label for="email">Email</label>
+                              <div class="invalid-feedback">Morate popuniti ovo polje sa validnom email adresom.</div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <div class="col my-2">
-                        <div class="form-floating">
-                          <input type="email" class="form-control form-control-dark bg-body-tertiary" id="email" placeholder="Email" required>
-                          <label for="email">Email</label>
-                          <div class="invalid-feedback">Morate popuniti ovo polje sa validnom email adresom.</div>
+                        <div class="row mb-3">
+                          <div class="col my-2">
+                            <div class="form-floating">
+                              <input type="datetime-local" id="datetime" class="form-control form-control-dark bg-body-tertiary" placeholder="Datum i vreme sisanja" value="2024-04-01T09:30" required>
+                              <label for="datetime">Datum i vreme sisanja</label>
+                              <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <div class="col my-2">
-                        <div class="form-floating">
-                          <input type="datetime-local" id="datetime" class="form-control form-control-dark bg-body-tertiary" placeholder="Datum i vreme sisanja" value="2024-04-01T09:30" required>
-                          <label for="datetime">Datum i vreme sisanja</label>
-                          <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                        <div class="row mb-3">
+                          <div class="col my-2 text-center">
+                            <button type="submit" class="btn btn-outline-light fs-5">Pošalji</button>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <div class="col my-2 text-center">
-                        <button type="submit" class="btn btn-outline-light fs-5">Pošalji</button>
-                      </div>
-                    </div>
-                  </form>
-            </div>
-          </div>
+                      </form>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <h2 class="text-center text-dark text-uppercase p-2">Lokacija</h2>
+                <hr class="border border-dark border-3 opacity-75 w-100 my-0">
+                <div class="container-fluid">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.3433559343507!2d20.452953521195518!3d44.81730333362839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a654d0560cf53%3A0x7e346f3a799d6d4d!2s%C4%8Cubrina%2C%20Beograd!5e0!3m2!1sen!2srs!4v1711832717997!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                </div>
+              </div>
+        </div>
+        
     </main>
     <hr class="border border-dark border-3 opacity-75 w-100 my-0">
     <footer class="bg-dark">
