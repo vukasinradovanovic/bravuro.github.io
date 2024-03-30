@@ -8,6 +8,7 @@
     <title>Kontakt</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -48,6 +49,58 @@
     </header>
     <hr class="border border-dark border-3 opacity-75 w-100 my-0"> 
 
+    <main class="container-fluid bg-body-tertiary p-0 my-5">
+        <div class="container container-xl-fluid">
+            <div class="container">
+                <h2 class="text-center text-dark text-uppercase p-2">Zakažite termin</h2>
+            </div>
+            <hr class="border border-dark border-3 opacity-75 w-100 my-0">
+            <div class="container bg-dark p-3 rounded-bottom">
+                <form>
+                    <div class="row mb-3">
+                      <div class="col my-2">
+                        <div class="form-floating">
+                          <input type="text" class="form-control form-control-dark bg-body-tertiary" id="ime" placeholder="Ime" required>
+                          <label for="ime">Ime</label>
+                          <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                        </div>
+                      </div>
+                      <div class="col my-2">
+                        <div class="form-floating">
+                          <input type="text" class="form-control form-control-dark bg-body-tertiary" id="prezime" placeholder="Prezime" required>
+                          <label for="prezime">Prezime</label>
+                          <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col my-2">
+                        <div class="form-floating">
+                          <input type="email" class="form-control form-control-dark bg-body-tertiary" id="email" placeholder="Email" required>
+                          <label for="email">Email</label>
+                          <div class="invalid-feedback">Morate popuniti ovo polje sa validnom email adresom.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col my-2">
+                        <div class="form-floating">
+                          <input type="datetime-local" id="datetime" class="form-control form-control-dark bg-body-tertiary" placeholder="Datum i vreme sisanja" value="2024-04-01T09:30" required>
+                          <label for="datetime">Datum i vreme sisanja</label>
+                          <div class="invalid-feedback">Morate popuniti ovo polje.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col my-2 text-center">
+                        <button type="submit" class="btn btn-outline-light fs-5">Pošalji</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+          </div>
+    </main>
+    <hr class="border border-dark border-3 opacity-75 w-100 my-0">
     <footer class="bg-dark">
         <div class="container text-center">
             <div class="row m-0 d-flex align-items-center flex-column-reverse flex-lg-row">
@@ -57,13 +110,13 @@
                 <div class="col-md-4 col-12">
                     <div class="row-2 py-3 d-flex flex-xl-row flex-column align-items-center">
                         <div class="container-fluid py-2">
-                            <a href="#" class="btn btn-outline-light border border-dark rounded-10 justify-content-center fs-5">Kontakt</a>
+                            <a href="#" class="btn btn-outline-light rounded-10 justify-content-center fs-5">Kontakt</a>
                         </div>
                         <div class="container-fluid py-2">
-                            <a href="#" class="btn btn-outline-light border-dark rounded-10 fs-5">Lokacija</a>
+                            <a href="#" class="btn btn-outline-light rounded-10 fs-5">Lokacija</a>
                         </div>
                         <div class="container-fluid py-2">
-                            <a href="https://www.poverenik.rs/sr-yu/politika-privatnosti.html" class="btn btn-outline-light border border-dark rounded-10 fs-5">Prava</a>
+                            <a href="https://www.poverenik.rs/sr-yu/politika-privatnosti.html" class="btn btn-outline-light rounded-10 fs-5">Prava</a>
                         </div>
                     </div>
                     <div class="row fs-3 py-2">
@@ -87,12 +140,12 @@
                             <a href="mailto:vukasin.radovanovic.67.23@ict.edu.rs" class="text-light"><i class="fa-regular fa-envelope"></i></a>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row py-4">
                         <p class="text-center text-light">&copy;Berbernica Bravuro 2024. All rights reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 text-light text-center">
-                    <div class="row-12 row-lg-4 py-2 ">
+                    <div class="row-12 row-lg-4 py-2">
                         <p>Radno vreme: &nbsp;8h - 16h</p>
                     </div>
                     <div class="row-12 row-lg-4 py-2">
@@ -106,5 +159,13 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        flatpickr('#datetime', {
+          enableTime: true,
+          dateFormat: "Y-m-d H:i",
+          time_24hr: true
+        });
+      </script>
+
 </body>
 </html>
