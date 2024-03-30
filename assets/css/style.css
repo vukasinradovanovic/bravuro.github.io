@@ -139,6 +139,10 @@ main {
   }
 }
 
+.card-body > h3 {
+  font-size: 20px;
+}
+
 footer {
   font-family: "Tenor Sans", sans-serif;
   font-weight: 400;
