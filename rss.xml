@@ -1,0 +1,22 @@
+<rss version="2.0">
+<channel>
+<title>Bitne informacije</title>
+<link>https://vukasinradovanovic.github.io/bravuro.github.io/</link>
+<description>Glavne informacije.</description>
+<item>
+<title>Kontakt</title>
+<link>https://vukasinradovanovic.github.io/bravuro.github.io/kontakt.html</link>
+<description>Kontakt firme, vlasnika i autora.</description>
+</item>
+<item>
+<title>Istorijat</title>
+<link>https://vukasinradovanovic.github.io/bravuro.github.io/istorijat.html</link>
+<description>Informacije samog kafića, kao i zanimljivosti.</description>
+</item>
+<item>
+<title>Autor</title>
+<link>https://vukasinradovanovic.github.io/bravuro.github.io/autor.html</link>
+<description>Informacije o autoru.</description>
+</item>
+</channel>
+</rss>

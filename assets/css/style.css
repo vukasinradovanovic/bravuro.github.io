@@ -14,6 +14,27 @@ a {
   font-optical-sizing: auto;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.text-animation {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.expand {
+  transition: transform 0.3s ease;
+}
+.expand:hover {
+  transform: scale(1.2);
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(../img/Slider1.jpg);
   background-repeat: no-repeat;
@@ -24,6 +45,12 @@ header {
 #logo {
   font-family: "Glass Antiqua", cursive;
   font-size: 60px;
+}
+
+#exampleModalLabel {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #navbarTogglerDemo03 ul li a {
@@ -120,6 +147,7 @@ main {
   background-position: center;
   background-repeat: repeat;
   background-blend-mode: color-burn;
+  background-size: 250px;
 }
 
 @media (min-width: 0) {
